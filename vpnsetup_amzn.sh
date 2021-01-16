@@ -1,14 +1,18 @@
 #!/bin/sh
 #
-# Script for automatic setup of an IPsec VPN server on Amazon Linux 2
+# Script for automatic setup of an IPsec VPN server on Ubuntu and Debian
 # Works on any dedicated server or virtual private server (VPS)
 #
+# JohnFordTV's VPN Premium Script
+# © Github.com/johndesu090
+# Official Repository: https://github.com/johndesu090/
+# For Updates, Suggestions, and Bug Reports, Join to my Messenger Groupchat(VPS Owners): https://m.me/join/AbbHxIHfrY9SmoBO
+# For Donations, Im accepting prepaid loads or GCash transactions:
+# Smart: 09206200840
+# Facebook: https://fb.me/johndesu090
+# Thanks for using this script
+#
 # DO NOT RUN THIS SCRIPT ON YOUR PC OR MAC!
-#
-# The latest version of this script is available at:
-# https://github.com/hwdsl2/setup-ipsec-vpn
-#
-# Copyright (C) 2020-2021 Lin Song <linsongui@gmail.com>
 #
 # This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
 # Unported License: http://creativecommons.org/licenses/by-sa/3.0/
