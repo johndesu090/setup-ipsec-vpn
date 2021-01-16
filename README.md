@@ -38,7 +38,7 @@ Ubuntu & Debian
 </summary>
 
 ```bash
-wget https://git.io/vpnsetup -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup.sh -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
 
@@ -48,7 +48,7 @@ CentOS & RHEL
 </summary>
 
 ```bash
-wget https://git.io/vpnsetup-centos -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-centos -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
 
@@ -58,11 +58,9 @@ Amazon Linux 2
 </summary>
 
 ```bash
-wget https://git.io/vpnsetup-amzn -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-amzn -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
-
-Your VPN login details will be randomly generated, and displayed on the screen when finished.
 
 For other installation options and how to set up VPN clients, read the sections below.
 
@@ -121,7 +119,7 @@ Ubuntu & Debian
 </summary>
 
 ```bash
-wget https://git.io/vpnsetup -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
 
@@ -132,7 +130,7 @@ CentOS & RHEL
 
 ```bash
 yum -y install wget
-wget https://git.io/vpnsetup-centos -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-centos -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
 
@@ -142,55 +140,13 @@ Amazon Linux 2
 </summary>
 
 ```bash
-wget https://git.io/vpnsetup-amzn -O vpnsetup.sh && sudo sh vpnsetup.sh
-```
-</details>
-
-**Option 2:** Edit the script and provide your own VPN credentials:
-
-<details open>
-<summary>
-Ubuntu & Debian
-</summary>
-
-```bash
-wget https://git.io/vpnsetup -O vpnsetup.sh
-nano -w vpnsetup.sh
-[Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
-sudo sh vpnsetup.sh
-```
-</details>
-
-<details>
-<summary>
-CentOS & RHEL
-</summary>
-
-```bash
-yum -y install wget nano
-wget https://git.io/vpnsetup-centos -O vpnsetup.sh
-nano -w vpnsetup.sh
-[Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
-sudo sh vpnsetup.sh
-```
-</details>
-
-<details>
-<summary>
-Amazon Linux 2
-</summary>
-
-```bash
-wget https://git.io/vpnsetup-amzn -O vpnsetup.sh
-nano -w vpnsetup.sh
-[Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
-sudo sh vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-amzn -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 </details>
 
 **Note:** A secure IPsec PSK should consist of at least 20 random characters.
 
-**Option 3:** Define your VPN credentials as environment variables:
+**Option 2:** Define your VPN credentials as environment variables:
 
 <details open>
 <summary>
@@ -200,7 +156,7 @@ Ubuntu & Debian
 ```bash
 # All values MUST be placed inside 'single quotes'
 # DO NOT use these special characters within values: \ " '
-wget https://git.io/vpnsetup -O vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup -O vpnsetup.sh
 sudo VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
 VPN_USER='your_vpn_username' \
 VPN_PASSWORD='your_vpn_password' \
@@ -217,7 +173,7 @@ CentOS & RHEL
 # All values MUST be placed inside 'single quotes'
 # DO NOT use these special characters within values: \ " '
 yum -y install wget
-wget https://git.io/vpnsetup-centos -O vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-centos -O vpnsetup.sh
 sudo VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
 VPN_USER='your_vpn_username' \
 VPN_PASSWORD='your_vpn_password' \
@@ -233,7 +189,7 @@ Amazon Linux 2
 ```bash
 # All values MUST be placed inside 'single quotes'
 # DO NOT use these special characters within values: \ " '
-wget https://git.io/vpnsetup-amzn -O vpnsetup.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnsetup-amzn -O vpnsetup.sh
 sudo VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
 VPN_USER='your_vpn_username' \
 VPN_PASSWORD='your_vpn_password' \
@@ -291,7 +247,7 @@ Ubuntu & Debian
 </summary>
 
 ```bash
-wget https://git.io/vpnupgrade -O vpnupgrade.sh && sudo sh vpnupgrade.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnupgrade -O vpnupgrade.sh && sudo sh vpnupgrade.sh
 ```
 </details>
 
@@ -301,7 +257,7 @@ CentOS & RHEL
 </summary>
 
 ```bash
-wget https://git.io/vpnupgrade-centos -O vpnupgrade.sh && sudo sh vpnupgrade.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnupgrade-centos -O vpnupgrade.sh && sudo sh vpnupgrade.sh
 ```
 </details>
 
@@ -311,7 +267,7 @@ Amazon Linux 2
 </summary>
 
 ```bash
-wget https://git.io/vpnupgrade-amzn -O vpnupgrade.sh && sudo sh vpnupgrade.sh
+wget https://raw.githubusercontent.com/johndesu090/setup-ipsec-vpn/master/vpnupgrade-amzn -O vpnupgrade.sh && sudo sh vpnupgrade.sh
 ```
 </details>
 
